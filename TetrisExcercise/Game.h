@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include "Grid.h"
 class Game
 {
 public:
@@ -12,4 +13,5 @@ public:
 
 private:
 	bool m_isRunning;
+	Grid m_grid;
 };

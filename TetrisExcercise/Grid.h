@@ -9,6 +9,7 @@ public:
 	Grid();
 	~Grid();
 	void Initialize();
+	void Update();
 	void Show();
 
 private:

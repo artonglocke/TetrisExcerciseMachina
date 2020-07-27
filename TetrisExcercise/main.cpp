@@ -17,28 +17,10 @@
 
 int main()
 {
-	/*Game game = Game();
+	Game game = Game();
 	game.Start();
 	while (game.IsRunning())
 	{
 		game.Update();
-	}*/
-
-	Hero shape = Hero();
-	shape.Show();
-
-	std::cout << "***************************************************************" << std::endl;
-	shape.Rotate();
-	shape.Show();
-	std::cout << "***************************************************************" << std::endl;
-	shape.Rotate();
-	shape.Show();
-	std::cout << "***************************************************************" << std::endl;
-	shape.Rotate();
-	shape.Show();
-	std::cout << "***************************************************************" << std::endl;
-	shape.Rotate();
-	shape.Show();
-
-	std::cin.get();
+	}
 }
