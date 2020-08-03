@@ -9,6 +9,8 @@ public:
 	~ClevelandZ();
 
 	void Show();
-
+	void Update() override;
+	std::vector<std::pair<int, int>> LastIndices() override;
+	std::vector<std::pair<int, int>> CurrentIndices() override;
 };
 

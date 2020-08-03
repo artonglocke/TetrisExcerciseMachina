@@ -24,3 +24,17 @@ void ClevelandZ::Show()
 	std::cout << m_shapeTiles.m20 << ", " << m_shapeTiles.m21 << ", " << m_shapeTiles.m22 << ", " << m_shapeTiles.m23 << std::endl;
 	std::cout << m_shapeTiles.m30 << ", " << m_shapeTiles.m31 << ", " << m_shapeTiles.m32 << ", " << m_shapeTiles.m33 << std::endl;
 }
+
+void ClevelandZ::Update()
+{
+}
+
+std::vector<std::pair<int, int>> ClevelandZ::LastIndices()
+{
+	return std::vector<std::pair<int, int>>();
+}
+
+std::vector<std::pair<int, int>> ClevelandZ::CurrentIndices()
+{
+	return std::vector<std::pair<int, int>>();
+}
