@@ -1,8 +1,6 @@
 #include "Grid.h"
 #include "BlueRicky.h"
 
-
-
 Grid::Grid()
 {
 }
@@ -64,5 +62,4 @@ void Grid::Show()
 		std::cout << std::endl;
 	}
 	std::cout << "--------------------------------------* END *--------------------------------------" << std::endl;
-
 }

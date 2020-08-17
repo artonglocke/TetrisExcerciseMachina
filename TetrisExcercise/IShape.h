@@ -2,6 +2,7 @@
 #include "Vector2.h"
 #include "Matrix4x4.h"
 #include <vector>
+#include <SFML/Graphics.hpp>
 
 enum ShapeType
 {
@@ -18,7 +19,7 @@ class IShape
 {
 public:
 	IShape() {};
-	~IShape() {};
+	virtual ~IShape() {};
 	Matrix4x4 GetShape() { return m_shapeTiles; };
 	ShapeType GetShapeType() { return m_type; };
 	void Rotate() { m_lastRotation = m_shapeTiles;  m_shapeTiles.Rotate(); }
@@ -34,5 +35,7 @@ protected:
 	Matrix4x4 m_shapeTiles;
 	ShapeType m_type;
 	bool m_endReached;
+
+	sf::Sprite m_shapeObject;
 };
 

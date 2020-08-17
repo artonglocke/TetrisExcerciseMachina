@@ -1,17 +1,20 @@
 #pragma once
 
-#include <iostream>
+#include <SFML/Graphics.hpp>
 #include "Grid.h"
+
 class Game
 {
 public:
 	Game();
 	~Game();
+	int Run();
+	
+private:
 	void Update();
-	void Start();
-	bool IsRunning() { return m_isRunning; };
+	void ClearEvents();
 
 private:
-	bool m_isRunning;
+	sf::RenderWindow m_window;
 	Grid m_grid;
 };

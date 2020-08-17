@@ -7,7 +7,6 @@ class BlueRicky : public IShape
 {
 public:
 	BlueRicky();
-	~BlueRicky();
 
 	void Show();
 	void Update() override;

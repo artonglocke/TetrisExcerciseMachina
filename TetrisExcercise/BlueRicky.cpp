@@ -1,6 +1,5 @@
 #include "BlueRicky.h"
 #include "Config.h"
-#include <conio.h>
 
 
 
@@ -19,11 +18,6 @@ BlueRicky::BlueRicky()
 	m_endReached = false;
 }
 
-
-BlueRicky::~BlueRicky()
-{
-}
-
 void BlueRicky::Show()
 {
 	std::cout << m_shapeTiles.m00 << ", " << m_shapeTiles.m01 << ", " << m_shapeTiles.m02 << ", " << m_shapeTiles.m03 << std::endl;
@@ -34,17 +28,17 @@ void BlueRicky::Show()
 
 void BlueRicky::Update()
 {
-	char key = std::getchar();
 	m_lastPosition = m_position;
-	if (key == 'r')
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::R))
 	{
 		Rotate();
 	}
-	if (key == 'a')
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A))
 	{
 		m_position.x--;
 	}
-	if (key == 'd')
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D))
 	{
 		m_position.x++;
 	}
@@ -57,6 +51,7 @@ void BlueRicky::Update()
 	{
 		m_endReached = true;
 	}
+	//m_shapeObject.setPosition(m_position.x, m_position.y);
 }
 
 std::vector<std::pair<int, int>> BlueRicky::LastIndices()

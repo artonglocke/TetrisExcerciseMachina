@@ -2,7 +2,6 @@
 #include "Config.h"
 #include "IShape.h"
 #include <iostream>
-
 class Grid
 {
 public:

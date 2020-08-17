@@ -1,5 +1,5 @@
 #include "Game.h"
-#include "Hero.h"
+
 // Tetris
 // Grid
 // Shape
@@ -17,10 +17,5 @@
 
 int main()
 {
-	Game game = Game();
-	game.Start();
-	while (game.IsRunning())
-	{
-		game.Update();
-	}
+	return Game{}.Run();
 }
