@@ -29,11 +29,5 @@ struct foo
 
 int main()
 {
-
-	{
-		Shared_ptr<foo> number(new foo{});
-		Shared_ptr<foo> numberTwo(number);
-	}
-	
-	//return Game{}.Run();
+	return Game{}.Run();
 }
