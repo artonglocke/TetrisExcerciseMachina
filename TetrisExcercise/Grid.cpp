@@ -16,8 +16,7 @@ void Grid::Initialize()
 		return;
 
 	m_initialized = true;
-	m_current = nullptr;
-	m_next = nullptr;
+
 	for (size_t i = 0; i < GRID_WIDTH; i++)
 	{
 		for (size_t j = 0; j < GRID_HEIGHT; j++)
@@ -30,8 +29,9 @@ void Grid::Initialize()
 void Grid::Update()
 {
 	// grid update logic
-	if (m_current == nullptr)
-		m_current = new BlueRicky();
+	if (m_current.get() != nullptr)
+		m_current = std::make_shared<BlueRicky>();
+
 	m_current->Update();
 	for (auto it : m_current->LastIndices())
 	{
@@ -42,9 +42,10 @@ void Grid::Update()
 	{
 		m_grid[it.first][it.second] = 1;
 	}
+
 	if (m_current->IsEndReached())
 	{
-		m_current = new BlueRicky();
+		m_current = std::make_shared<BlueRicky>();
 	}
 	Show();
 }

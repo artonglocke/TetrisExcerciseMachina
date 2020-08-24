@@ -1,7 +1,6 @@
 #include "Game.h"
 
 #include <vector>
-#include "Shared_ptr.h"
 
 // Tetris
 // Grid
@@ -17,15 +16,6 @@
 // Game {Difficulty increase, Score, Gameover scenario}
 // Grid {Popunjavanje grida, block desctruction, validirati moving i rotation}
 // Shape {Grid oblik, moving i rotation mehanika}
-
-struct foo
-{
-	foo() = default;
-	~foo()
-	{
-		std::cout << "Destroy";
-	}
-};
 
 int main()
 {

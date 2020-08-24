@@ -2,6 +2,8 @@
 #include "Config.h"
 #include "IShape.h"
 #include <iostream>
+#include <memory>
+
 class Grid
 {
 public:
@@ -14,7 +16,7 @@ public:
 private:
 	int m_grid[GRID_WIDTH][GRID_HEIGHT];
 	bool m_initialized;
-	IShape* m_current;
-	IShape* m_next;
+	std::shared_ptr<IShape> m_current;
+	std::shared_ptr<IShape> m_next;
 };
 

@@ -159,7 +159,6 @@
     <ClInclude Include="Matrix4x4.h" />
     <ClInclude Include="OrangeRicky.h" />
     <ClInclude Include="RhodeIslandZ.h" />
-    <ClInclude Include="Shared_ptr.h" />
     <ClInclude Include="Smashboy.h" />
     <ClInclude Include="Teewee.h" />
     <ClInclude Include="Vector2.h" />
