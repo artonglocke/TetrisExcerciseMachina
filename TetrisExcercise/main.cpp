@@ -1,5 +1,8 @@
 #include "Game.h"
 
+#include <vector>
+#include "Shared_ptr.h"
+
 // Tetris
 // Grid
 // Shape
@@ -15,7 +18,22 @@
 // Grid {Popunjavanje grida, block desctruction, validirati moving i rotation}
 // Shape {Grid oblik, moving i rotation mehanika}
 
+struct foo
+{
+	foo() = default;
+	~foo()
+	{
+		std::cout << "Destroy";
+	}
+};
+
 int main()
 {
-	return Game{}.Run();
+
+	{
+		Shared_ptr<foo> number(new foo{});
+		Shared_ptr<foo> numberTwo(number);
+	}
+	
+	//return Game{}.Run();
 }
