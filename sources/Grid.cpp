@@ -29,7 +29,7 @@ void Grid::Initialize()
 void Grid::Update()
 {
 	// grid update logic
-	if (m_current.get() != nullptr)
+	if (!m_current)
 		m_current = std::make_shared<BlueRicky>();
 
 	m_current->Update();

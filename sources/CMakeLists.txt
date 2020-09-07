@@ -1,0 +1,12 @@
+list(APPEND Tetris_SOURCES
+			${CMAKE_CURRENT_LIST_DIR}/BlueRicky.cpp
+			${CMAKE_CURRENT_LIST_DIR}/ClevelandZ.cpp
+			${CMAKE_CURRENT_LIST_DIR}/Game.cpp
+			${CMAKE_CURRENT_LIST_DIR}/Grid.cpp
+			${CMAKE_CURRENT_LIST_DIR}/Hero.cpp
+			${CMAKE_CURRENT_LIST_DIR}/Matrix4x4.cpp
+			${CMAKE_CURRENT_LIST_DIR}/OrangeRicky.cpp
+			${CMAKE_CURRENT_LIST_DIR}/RhodeIslandZ.cpp
+			${CMAKE_CURRENT_LIST_DIR}/SmashBoy.cpp
+			${CMAKE_CURRENT_LIST_DIR}/Teewee.cpp
+			${CMAKE_CURRENT_LIST_DIR}/Vector2.cpp)

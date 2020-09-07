@@ -1,0 +1,2 @@
+list(APPEND Tetris_SOURCES
+			${CMAKE_CURRENT_LIST_DIR}/main.cpp)

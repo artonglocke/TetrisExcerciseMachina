@@ -1,0 +1,16 @@
+include_directories("${CMAKE_CURRENT_LIST_DIR}")
+
+list(APPEND Tetris_HEADERS
+			${CMAKE_CURRENT_LIST_DIR}/BlueRicky.h
+			${CMAKE_CURRENT_LIST_DIR}/ClevelandZ.h
+			${CMAKE_CURRENT_LIST_DIR}/Config.h
+			${CMAKE_CURRENT_LIST_DIR}/Game.h
+			${CMAKE_CURRENT_LIST_DIR}/Grid.h
+			${CMAKE_CURRENT_LIST_DIR}/Hero.h
+			${CMAKE_CURRENT_LIST_DIR}/IShape.h
+			${CMAKE_CURRENT_LIST_DIR}/Matrix4x4.h
+			${CMAKE_CURRENT_LIST_DIR}/OrangeRicky.h
+			${CMAKE_CURRENT_LIST_DIR}/RhodeIslandZ.h
+			${CMAKE_CURRENT_LIST_DIR}/SmashBoy.h
+			${CMAKE_CURRENT_LIST_DIR}/Teewee.h
+			${CMAKE_CURRENT_LIST_DIR}/Vector2.h)
